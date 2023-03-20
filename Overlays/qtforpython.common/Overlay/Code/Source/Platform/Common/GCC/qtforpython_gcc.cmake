@@ -6,4 +6,7 @@
 #
 #
 
-set(PAL_TRAIT_BUILD_QTFORPYTHON_SUPPORTED TRUE)
+set(LY_COMPILE_OPTIONS
+    PRIVATE
+        -fexceptions # QtForPythonSystemComponent uses a try catch block
+)
